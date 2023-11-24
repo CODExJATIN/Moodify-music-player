@@ -5,19 +5,23 @@ let myProgrssBar = document.getElementById('myProgressBar');
 let gif = document.getElementById('gif');
 let masterSongName = document.getElementsByClassName('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
+let songListPlay = document.getElementsByClassName("songItemPlay");
+
+
 let songs = [
-    { songName: "Life is better with you", songPath: "song/1.mp3", coverPath: "covers/1.jpg" },
-    { songName: "Way Down We Go", songPath: "song/2.mp3", coverPath: "covers/2.jpg" },
-    { songName: "The Shade", songPath: "song/3.mp3", coverPath: "covers/3.jpg" },
-    { songName: "Sunroof", songPath: "song/4.mp3", coverPath: "covers/4.jpg" },
-    { songName: "Go fuck yourself", songPath: "song/5.mp3", coverPath: "covers/5.jpg" },
-    { songName: "I wanna be yours", songPath: "song/6.mp3", coverPath: "covers/6.jpg" }
+    { songName: "Life is better with you", songPath: "song/1.mp3", coverPath: "covers/1.jpg", length: "3:16" },
+    { songName: "Way Down We Go", songPath: "song/2.mp3", coverPath: "covers/2.jpg", length: "3:33" },
+    { songName: "The Shade", songPath: "song/3.mp3", coverPath: "covers/3.jpg", length: "3:01" },
+    { songName: "Sunroof", songPath: "song/4.mp3", coverPath: "covers/4.jpg", length: "2:43" },
+    { songName: "Go fuck yourself", songPath: "song/5.mp3", coverPath: "covers/5.jpg", length: "2:09" },
+    { songName: "I wanna be yours", songPath: "song/6.mp3", coverPath: "covers/6.jpg", length: "3:03" }
 ]
 let audioElement = new Audio('song/1.mp3');
 
 songItems.forEach((element, i) => {
     element.getElementsByTagName("img")[0].src = songs[i].coverPath;
     element.getElementsByClassName("songName")[0].innerText = songs[i].songName;
+    element.getElementsByClassName("time")[0].innerText = songs[i].length;
 
 });
 
@@ -28,12 +32,16 @@ masterPlay.addEventListener('click', () => {
         //console.log(songs[songIndex].songName);
         masterPlay.classList.remove("fa-play");
         masterPlay.classList.add("fa-pause");
+        songListPlay[songIndex].classList.remove("fa-play");
+        songListPlay[songIndex].classList.add("fa-pause");
         gif.style.opacity = 1;
     }
     else {
         audioElement.pause();
         masterPlay.classList.remove("fa-pause");
         masterPlay.classList.add("fa-play");
+        songListPlay[songIndex].classList.remove("fa-pause");
+        songListPlay[songIndex].classList.add("fa-play");
         gif.style.opacity = 0;
     }
 })
@@ -61,7 +69,7 @@ function makeAllPlay() {
 Array.from(document.getElementsByClassName('songItemPlay')).forEach((element) => {
     element.addEventListener('click', (e) => {
 
-        if (audioElement.paused || audioElement.currentTime<=0) {
+        if (audioElement.paused || audioElement.currentTime <= 0) {
 
             makeAllPlay();
             index = parseInt(e.target.id);
@@ -78,7 +86,7 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element) =>
 
         }
 
-        else{
+        else {
 
             audioElement.pause();
             e.target.classList.remove('fa-pause');
@@ -87,11 +95,12 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element) =>
             masterPlay.classList.remove("fa-pause");
             masterPlay.classList.add("fa-play");
 
+            gif.style.opacity = 0;
 
         }
-       
 
-        
+
+
 
 
 
@@ -114,6 +123,14 @@ document.getElementById('next').addEventListener('click', () => {
     masterPlay.classList.remove("fa-play");
     masterPlay.classList.add("fa-pause");
 
+    songListPlay[songIndex].classList.remove("fa-play");
+    songListPlay[songIndex].classList.add("fa-pause");
+
+    songListPlay[songIndex-1].classList.remove("fa-pause");
+    songListPlay[songIndex-1].classList.add("fa-play");
+
+    gif.style.opacity = 1;
+
 });
 
 document.getElementById('previous').addEventListener('click', () => {
@@ -133,6 +150,14 @@ document.getElementById('previous').addEventListener('click', () => {
     audioElement.play();
     masterPlay.classList.remove("fa-play");
     masterPlay.classList.add("fa-pause");
+
+    songListPlay[songIndex].classList.remove("fa-play");
+    songListPlay[songIndex].classList.add("fa-pause");
+
+    songListPlay[songIndex+1].classList.remove("fa-pause");
+    songListPlay[songIndex+1].classList.add("fa-play");
+
+    gif.style.opacity = 1;
 
 });
 
