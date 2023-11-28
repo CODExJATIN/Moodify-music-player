@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+
+nav{
+    position: sticky;
+    font-family: 'Ubuntu','sans-serif';
+    color: white;
+    background-color: black;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutBlock{
+    min-height: 75vh;
+    background-color: #41B3A3;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    margin: 25px auto;
+    width: 80%;
+    border-radius: 20px;
+
+    justify-content: space-between;
+
+}
+
+.selector div{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    border-radius: 15px;
+    margin: 10px;
+    margin-left: 10px;
+    font-family: 'Varela Round' , sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-left: 40px;
+}
+
+
+
+.details{
+    height:300px;
+    width: 60%;
+    margin-right: 20px;
+    border-radius: 10px;
+    background-color: #E27D60;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.details div h1{
+    font-family: 'Ubuntu','sans-serif';
+    text-align: center;
+    align-items: center;
+}
+
+.details div{
+    font-family: 'Varela Round' , sans-serif;
+    padding-left: 20px;
+}
+
+.details div img{
+    height: 60px;
+}
+
+ul{
+    list-style-type: decimal;
+    padding-left: 30px;
+}
+
+
+
+
+
+/*.aboutMe{
+    margin: 10vh;
+    padding:10vh;
+
+    background-color: #E27D60;
+
+}*/
+
