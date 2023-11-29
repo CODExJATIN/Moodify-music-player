@@ -22,14 +22,18 @@ nav ul {
     height: 65px;
     background-color: black;
     color: aliceblue;
+    
 
 }
 
 nav ul li{
     padding: 0 12px;
+    
 }
 a{
-    font-family: 'Ubuntu','sans-serif'; 
+    font-family: 'Ubuntu','sans-serif';
+    text-decoration: none; 
+    color: aliceblue;
 }
 
 
