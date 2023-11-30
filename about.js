@@ -31,7 +31,7 @@ techStack[0].addEventListener('click',()=>{
     <h1><img src="logo.png">Moodify</h1>
     <p>It's a music player. loaded with songs that can make your mood fantastic.<br>
         <b>Technologies Used</b>
-        <ul>
+        <ul class="techList">
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>

@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: antiquewhite;
+    background-color:rgb(173, 194, 238);
 }
 
 
@@ -88,9 +88,16 @@ nav{
     height: 60px;
 }
 
-ul{
+.techList{
     list-style-type: decimal;
+    color: black;
+}
+
+ul{
+    list-style-type: none;
     padding-left: 30px;
+    font-size: 15px;
+    color: white;
 }
 
 div a{
@@ -106,6 +113,43 @@ a img, a h3{
 
 #linkedIn{
     border-radius: 10px;
+}
+
+section{
+    display: flex;
+    justify-content: center ;
+}
+
+footer{
+    height: 180px;
+    background-color: black;
+    
+
+}
+
+.logoName{
+    font-family: 'Ubuntu','sans-serif'; 
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    padding: 30px 30px;
+}
+
+.socialLayer{
+    height: 60px;
+    background-color: rgb(136, 135, 136);
+   
+}
+
+.socialLayer section{
+    display: flex;
+    justify-content:center;
+    padding: 15px 10px;
+}
+
+.logoName img{
+    height: 60px;
 }
 
 
