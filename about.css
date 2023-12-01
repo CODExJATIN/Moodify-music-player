@@ -123,6 +123,7 @@ section{
 footer{
     height: 180px;
     background-color: black;
+    cursor: pointer;
     
 
 }
@@ -136,8 +137,14 @@ footer{
     padding: 30px 30px;
 }
 
+.lists{
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+}
+
 .socialLayer{
-    height: 60px;
+    height: 90px;
     background-color: rgb(136, 135, 136);
    
 }
@@ -150,6 +157,27 @@ footer{
 
 .logoName img{
     height: 60px;
+}
+
+@media screen and (max-width:600px) {
+    nav{
+        width:480px;
+    }
+    footer{
+        width: max-content;
+        height: max-content;
+    }
+    .logoName{
+        flex-direction: column;
+    }
+    .aboutBlock{
+        width:100%;
+        margin-left:40px;
+    }
+    .selector div{
+        width: 80%;
+        font-size:15px;   
+    }
 }
 
 

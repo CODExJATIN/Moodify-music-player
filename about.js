@@ -98,7 +98,7 @@ social[0].addEventListener('click',()=>{
     details[0].innerHTML=`
     <div class="box" style="opacity:0; transition: opacity 1s ease-in">
     <h1><img src="logo.png">Moodify</h1>
-    <br><br>
+    <br>
 
     <h4 style="font-family: 'Varela Round' , sans-serif;">Find me on:</h4>
 
