@@ -166,8 +166,8 @@ footer{
         width:480px;
     }
     footer{
-        width: max-content;
-        height: max-content;
+        width: fit-content;
+        height: fit-content;
     }
     .logoName{
         flex-direction: column;
