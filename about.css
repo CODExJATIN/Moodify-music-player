@@ -170,7 +170,7 @@ footer{
         width:480px;
     }
     footer{
-        width: fit-content;
+        width:max-content;
         height: fit-content;
     }
     .logoName{
