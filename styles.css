@@ -133,3 +133,14 @@ a{
     transition: opacity 1s ease-in;
 }
 
+@media screen and (max-width:600px) {
+    .songItem{
+        font-size: 10px;
+        width: 100%;
+    }
+    #myProgressBar{
+        height: 80vh;
+    }
+    
+}
+

@@ -145,6 +145,10 @@ footer{
     justify-content: center;
 }
 
+.lists li a {
+    color: aliceblue;
+}
+
 .socialLayer{
     height: 90px;
     background-color: rgb(136, 135, 136);
