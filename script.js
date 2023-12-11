@@ -7,6 +7,18 @@ let masterSongName = document.getElementsByClassName('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 let songListPlay = document.getElementsByClassName("songItemPlay");
 
+let list1 = document.getElementById('pl1');
+let list2 = document.getElementById('pl2');
+let list3 = document.getElementById('pl3');
+let list4 = document.getElementById('pl4');
+let list5 = document.getElementById('pl5');
+let container = document.getElementsByClassName('container')[0];
+let defaultContent = container.innerHTML;
+
+
+
+
+
 
 let songs = [
     { songName: "Life is better with you", songPath: "song/1.mp3", coverPath: "covers/1.jpg", length: "3:16" },
@@ -160,6 +172,139 @@ document.getElementById('previous').addEventListener('click', () => {
     gif.style.opacity = 1;
 
 });
+
+
+list1.addEventListener('mouseover',()=>{
+
+    //container.innerHTML='';
+    document.getElementById('sl1').classList.add('hidden');
+   
+
+    container.style = `background-image: url(bg2.png);
+    background-size: cover;
+    background-position: center;`
+
+});
+
+list1.addEventListener('mouseout',()=>{
+   
+
+    //container.innerHTML = defaultContent;
+    document.getElementById('sl1').classList.remove('hidden');
+   
+
+
+    container.style = `background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;`
+
+});
+
+
+
+list2.addEventListener('mouseover',()=>{
+
+    //container.innerHTML='';
+    document.getElementById('sl1').classList.add('hidden');
+
+    container.style = `background-image: url(bg4.jpg);
+    background-size: cover;
+    background-position: center;`
+
+});
+
+list2.addEventListener('mouseout',()=>{
+   
+
+    //container.innerHTML = defaultContent;
+    document.getElementById('sl1').classList.remove('hidden');
+
+    container.style = `background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;`
+});
+
+
+
+list3.addEventListener('mouseover',()=>{
+
+    //container.innerHTML='';
+    document.getElementById('sl1').classList.add('hidden');
+
+    container.style = `background-image: url(bg3.jpg);
+    background-size: cover;
+    background-position: center;`
+
+});
+
+list3.addEventListener('mouseout',()=>{
+   
+
+    //container.innerHTML = defaultContent;
+    document.getElementById('sl1').classList.remove('hidden');
+
+    container.style = `background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;`
+
+});
+
+
+list4.addEventListener('mouseover',()=>{
+
+    //container.innerHTML='';
+    document.getElementById('sl1').classList.add('hidden');
+
+    container.style = `background-image: url(bg5.jpg);
+    background-size: cover;
+    background-position: center;`
+
+});
+
+list4.addEventListener('mouseout',()=>{
+   
+
+    //container.innerHTML = defaultContent;
+    document.getElementById('sl1').classList.remove('hidden');
+
+    container.style = `background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;`
+
+});
+
+list5.addEventListener('mouseover',()=>{
+
+    //container.innerHTML='';
+    document.getElementById('sl1').classList.add('hidden');
+
+    container.style = `background-image: url(bg6.jpeg);
+    background-size: cover;
+    background-position: center;`
+
+});
+
+list5.addEventListener('mouseout',()=>{
+   
+
+    //container.innerHTML = defaultContent;
+    document.getElementById('sl1').classList.remove('hidden');
+
+    container.style = `background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;`
+
+});
+
+
+
+
+
+
+
+
+
+
 
 
 

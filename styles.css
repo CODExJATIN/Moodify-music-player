@@ -30,6 +30,46 @@ nav ul li{
     padding: 0 12px;
     
 }
+
+nav ul li:hover{
+    background-color: dimgray;
+}
+
+.content{
+    display:none;
+    position: absolute;
+    background-color:#ddd;
+    border-radius: 0 20px 20px;
+    min-width: 160px;
+    width: max-content;
+    box-shadow: 0 8px  16px 0 rgba(0,0,0,0,2);
+    text-align: center;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.playlist{
+    color:black;
+    background-color:darkgray;
+    border: 1px solid black;
+    border-radius: 0 20px 0 20px;
+}
+
+.playlist:hover{
+    color: aliceblue;
+    background-color: black;
+    border-radius: 20px;
+}
+
+
+.dropdown:hover .content{
+    display: block;
+    display: flex;
+    flex-direction: column;
+
+}
+
 a{
     font-family: 'Ubuntu','sans-serif';
     text-decoration: none; 
@@ -133,13 +173,22 @@ a{
     transition: opacity 1s ease-in;
 }
 
+.hidden{
+    display: none;
+}
+
 @media screen and (max-width:600px) {
     .songItem{
         font-size: 10px;
         width: 100%;
     }
     #myProgressBar{
-        height: 80vh;
+        height: 150vh;
+    }
+    .songInfo{
+        display:flex;
+        flex-direction: column;
+        width: 80px;
     }
     
 }
