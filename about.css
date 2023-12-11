@@ -167,7 +167,7 @@ footer{
 
 @media screen and (max-width:600px) {
     nav{
-        width:480px;
+        width:485px;
     }
     footer{
         width:max-content;
