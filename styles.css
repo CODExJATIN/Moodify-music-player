@@ -178,17 +178,41 @@ a{
 }
 
 @media screen and (max-width:600px) {
+
+    nav ul{
+        flex-direction: column;
+        background-color: black;
+        /*width: max-content;*/
+        height: max-content;
+    }
+
+    .bottom{
+        flex-direction: row;
+        height:20vh;
+        
+    }
+
+    nav ul li{
+        margin-top: 5px;
+        margin-bottom: 2px;
+    }
     .songItem{
         font-size: 10px;
         width: 100%;
     }
     #myProgressBar{
-        height: 150vh;
+        /*height: 150vh;*/
+        width: 50vw;
+    
     }
+
     .songInfo{
         display:flex;
         flex-direction: column;
         width: 80px;
+        font-size: smaller;
+
+        
     }
     
 }
