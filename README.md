@@ -10,7 +10,7 @@ Moodify Music Player is a web-based music player crafted with HTML, CSS, and Jav
 - CSS <img src="https://i.ibb.co/XV2gDMr/logo-2582747-1280.png" alt="CSS Logo" width="20">
 - JavaScript <img src="https://i.ibb.co/ZWtnrzk/javascript-736400-1280.webp" alt="JS Logo" width="15">
 
-![Moodify Banner](https://i.ibb.co/HdvhpGy/20240121-192512-0000.png)
+![Moodify Banner](https://i.ibb.co/n3nzwJP/20240121-204449-0000.png)
 
 Click [here](https://codexjatin.github.io/Moodify-music-player/index.html) to explore the Moodify Music Player.
 
