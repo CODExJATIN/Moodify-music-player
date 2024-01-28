@@ -186,6 +186,10 @@ a{
         height: max-content;
     }
 
+    .songItem{
+        width: 70vw;
+    }
+
     .bottom{
         flex-direction: row;
         height:20vh;
